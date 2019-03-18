@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pagina_cadastro.views import criar_cadastro_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cadastro/', criar_cadastro_view),
 ]

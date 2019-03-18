@@ -2,6 +2,19 @@ from django.db import models
 
 # Create your models here.
 class Cadastro(models.Model):
+    ACRE = 'AC'
+    BAHIA = 'BA'
+    MINAS_GERAIS = 'MG'
+    RIO_DE_JANEIRO = 'RJ'
+    SAO_PAULO ='SP'
+    ESTADOS = [
+        (ACRE, 'Acre'),
+        (BAHIA, 'Bahia'),
+        (MINAS_GERAIS, 'Minas Gerais'),
+        (RIO_DE_JANEIRO, 'Rio de Janeiro'),
+        (SAO_PAULO, 'São Paulo')
+    ]
+
     nome = models.CharField(max_length = 120)
     # sobrenome = models.CharField(max_length = 120)
     # nascimento = models.DateField()
@@ -9,9 +22,8 @@ class Cadastro(models.Model):
     senha = models.CharField(max_length = 20)    
     telefone = models.CharField(max_length = 20)
     celular = models.CharField(max_length = 20)
-    estado = models.CharField(max_length = 50)
+    estado = models.CharField(max_length = 2, choices = ESTADOS, default=ACRE)
     cidade = models.CharField(max_length = 120)
-    bairro = models.CharField(max_length = 50)
     
     # desenvolvimento web
     javaScript = models.BooleanField(default=False)
@@ -27,8 +39,6 @@ class Cadastro(models.Model):
 
     # linguagem de programação
     java = models.BooleanField(default=False)
-    cSharp = models.BooleanField(default=False)
-    cMaisMais = models.BooleanField(default=False)
     c = models.BooleanField(default=False)
     algoritmos = models.BooleanField(default=False)
 

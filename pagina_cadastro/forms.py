@@ -6,15 +6,12 @@ class FormCadastro(forms.ModelForm):
         model = Cadastro
         fields = [
             'nome',
-            # 'sobrenome',
-            # 'nascimento',
             'email',
             'senha',
             'telefone',
             'celular',
             'estado',
             'cidade',
-            'bairro',
             'javaScript',
             'angular',
             'react',
@@ -26,8 +23,6 @@ class FormCadastro(forms.ModelForm):
             'python',
             'bootstrap',
             'java',
-            'cSharp',
-            'cMaisMais',
             'c',
             'algoritmos',
             'financas',
@@ -45,5 +40,6 @@ class FormCadastro(forms.ModelForm):
             'oracle',
         ]
         widgets = { #serve para especificar um campo 
-            'senha' : forms.PasswordInput(), 
+            'senha' : forms.PasswordInput(),
+
         }

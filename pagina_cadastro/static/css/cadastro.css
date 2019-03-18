@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans';
+}
+
+header{
+    text-align: center;
+    font-size: 12pt;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: #563E7C url(../img/background.jpg) no-repeat center center/cover;
+    background-blend-mode: screen;
+    padding: 50px 0;
+}
+
+h1{
+    color: #fff;
+}
+
+.icone-book{
+    width: 50px;
+}
+
+.form-container{
+    padding: 0 50px;
+}
+
+h2{
+    color: #563E7C;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label{
+    color: #A3B2B2;
+    display: flex;
+    margin: 5px 0;
+}
+
+input{
+    padding: 4px;
+    border: 0;
+    margin: 0 auto;
+    width: 105%;
+    border-bottom: 1px solid #888;
+}
+
+input:focus{
+    color: #2A2E2E;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    margin: 13px 0;
+    font-size: 14pt;
+}
+
+
+hr{
+    border-color: #563E7C;  
+    margin: 5px 0;
+}
+
+.botao-sign{
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 12pt;
+    padding: 10px;
+    font-weight: 100;
+    background-color: #563E7C;
+    border: 0 solid #563E7C;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+
+.botao{
+    display: block;
+    margin: 0 auto;
+    background: #ea4335;
+    border: 0;
+    border-radius: 100px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.facebeook{
+    background: #3b5998;
+}
+
+.google{
+    background: #ea4335;
+}
+
+.termos-uso{
+    display: flex;
+}
+
+.termos{
+    margin: 25px 0;
+    width: 44px;
+}
+
+.texto-termos{
+    font-size: 8pt;
+    justify-items: center;
+    padding: 12px 0;
+}
+
+.desenWeb{
+    color: red;
+}
+
+@media(min-width: 434px){
+    .form-container{
+        padding: 0 80px;
+    }
+}
+
+@media(min-width: 576px){
+    header{
+        padding: 85px 0;
+    }
+
+    .form-container{
+        padding: 0 130px;
+    }
+
+    .botao{
+        margin-top: 15px;
+    }
+}
+
+@media(min-width: 624px){
+    .form-container{
+        padding: 0 160px;
+    }
+
+    header{
+        padding: 100px 0;
+    }
+}
+
+@media(min-width: 640px){
+    .form-container{
+        padding: 0 160px;
+    }
+}
+
+@media(min-width: 720px){
+    .form-container{
+        padding: 0 180px;
+    }
+
+    h1{
+        font-size: 28pt;
+    }
+
+    .icone-book{
+        width: 70px;
+    }
+
+    h2{
+        padding: 22px 0;
+    }
+}
+
+@media(min-width: 768px){
+    .form-container{
+        padding: 0 200px;
+    }
+}
+
+@media(min-width: 992px){
+    .form-container{
+        padding: 0 220px;
+    }
+}
+
+@media(min-width: 1200px){
+    .form-container{
+        padding: 0 420px;
+    }
+}
