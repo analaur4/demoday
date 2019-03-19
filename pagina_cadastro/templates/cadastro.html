@@ -24,7 +24,11 @@
                 {% csrf_token %}
                 <h2>Cadastre-se</h2>
                 
-                {{ cadastro.as_p }}
+                <!-- {{ cadastro.as_p }} -->
+
+                <!-- chamar cada campo e montar o formulário manualmente -->
+
+                {{ cadastro.javaScript }}
 
                 <button class="botao-sign">Cadastre-se</button>
 
