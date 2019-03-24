@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,6 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>F5Study - Bem-vindo</title>
     <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/categorias.css' %}">
+    <link rel="stylesheet" href="{% static 'css/confirmar-match' %}">
+    <link rel="stylesheet" href="{% static 'css/procurar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/procurar=dw.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
     <script defer src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
@@ -24,8 +30,8 @@
                 <span class="menu-left">
                     <li class="title-menu">Menu</li>
                     <!-- <li><a href="#"><span class="fa fa-home icon-menu"></span>Inicio</a></li> -->
-                    <li class="logo-header"><a href="#"><span class="fa fa-home icon-menu logo-header"></span>Home</a></li>
-                    <li><a href="#"><span class="fa fa-users icon-menu"></span>Sobre</a></li>
+                    <li class="logo-header"><a href="{% url 'home' %}"><span class="fa fa-home icon-menu logo-header"></span>Home</a></li>
+                    <li><a href="{% url 'sobre' %}"><span class="fa fa-users icon-menu"></span>Sobre</a></li>
 
                     <li class="item-submenu" menu="1">
                         <a href="#"><span class="fa fa-list icon-menu"></span>Categorias</a>
@@ -40,7 +46,7 @@
                                     <ul class="sub-menu2">
                                         <li class="title-menu"><span class="icon-menu"></span>Desenvolvimento</li>
                                         <li class="go-back">Voltar</li>
-                                        <li><a href="#">Desenvolvimento web</a></li>
+                                        <li><a href="{% url 'categorias' %}">Desenvolvimento web</a></li>
                                         <li><a href="#">Aplicativos móveis</a></li>
                                         <li><a href="#">Liguagens de programação</a></li>
                                         <li><a href="#">Banco de dados</a></li>
@@ -67,13 +73,13 @@
                                 <li class=""><a href="#">Música</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><span class="fa fa-envelope icon-menu"></span>Contato</a></li>
+                        <li><a href="#footer"><span class="fa fa-envelope icon-menu"></span>Contato</a></li>
                     </span>
             
 
                 <span class="menu-right">
-                    <li><a href="#" class="menu-left">Login</a></li>
-                    <li><a href="#" class="menu-left  btn-cadastrar">Cadastra-se</a></li>
+                    <li><a href="{% url 'login' %}" class="menu-left">Login</a></li>
+                    <li><a href="{% url 'cadastro' %}" class="menu-left  btn-cadastrar">Cadastra-se</a></li>
                 </span>
             </ul>
         </nav>
@@ -86,7 +92,7 @@
 
     {% endblock %}
 
-    <footer>
+    <footer id="footer">
         <div>
             <!-- box1 -->
             <div class="footer-about">

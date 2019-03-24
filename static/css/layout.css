@@ -25,6 +25,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 header div{ 
     align-items: center;
@@ -437,6 +438,7 @@ footer div h3{
     .nav-header .menu .menu-right .btn-cadastrar{
         background: #e62b4a;
         border-radius: 5px;
+        height: 48px;
     }
     .nav-header .menu .menu-right .btn-cadastrar{
         background: #e62b4a;

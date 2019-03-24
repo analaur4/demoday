@@ -1,0 +1,67 @@
+{% extends 'layout-logado.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <h2 class="title-procurar">Procurar</h2>
+    <div>
+        <form action="" method="GET" class="procurar">
+            <span>Obs: A categoria é automáticamente preenchida de acordo com o interesse que você inseriu no momento de cadastramento. Mas, pode ser mudada a qualquer momento.</span>
+            <label class="">Categoria (Interesse):</label>
+            <div>
+                <select name="Buscar-instrutor" id="Buscar-instrutor">
+                    <optgroup label="Desenvolvimento">
+                        <option selected>Desenvolvimento Web</option>
+                        <option>Banco de Dados</option>
+                        <option>Aplicativos móveis</option>
+                    </optgroup>
+                </select>
+                <a href="{% url 'procurar-dw' %}">Procurar </a>
+            </div>
+        </form>
+
+        <main class="painel-match">
+            <div>
+                <!-- box-card1 -->
+                <div class="box-cards-match">
+                <div class="thecard">
+                        <div class="thefront">
+                             <div class="card">
+                                    <img src="{% static 'img/card-bg3.jpg' %}" alt="fundo do card" class="card-img">
+                                    <img src="{% static 'img/icon-perfil.jpg' %}" alt="imagem perfil" class="profile-img">
+                                    <h1>Ana Laura</h1>
+                                    <p class="job-title">Pianista</p>
+                             </div>
+                        </div>
+                        <div class="theback">
+                            <div>
+                                <h2>Perfil:</h2>
+                                <p>Professora, pianista, tecladista, compositor e autor de métodos de música. Possui sete CDs lançados mundialmente e cinco livros de música.</p>
+                                <h3>Habilidades Principais:</h3>
+                                <ul>
+                                    <li>Pianista</li>
+                                    <li>Tecladista</li>
+                                </ul>
+                                <h3>Avaliação</h3>
+                                    <img src="{% static 'img/avaliacao2.png' %}" alt="" class="avaliacao">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box-card2 -->
+                <div class="box-cards-match">
+                <div class="thecard">
+                        <div class="thefront">
+
+                        </div>
+                        <div class="theback"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+    </div>
+
+    {% endblock %}

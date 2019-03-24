@@ -1,0 +1,83 @@
+{% extends 'layout-logado.html' %}
+{% load staticfiles %}
+
+{% block content %}
+     <!-- banner -->
+     <div class="banner-index">
+            <h1><span>F5</span>Study</h1>
+            <p>Atualizando ideias, compartilhando conhecimentos</p>
+        </div>
+    
+        <main>
+            <h2>Categorias em destaque:</h2>
+            <div class="categorias">
+                <div class="box-categorias">
+                   <a href="#"><img src="{% static 'img/banner-desenvolvimento.jpg' %}" alt=""></a>
+                   <a href="#"><img src="{% static 'img/banner-musica.jpg' %}" alt=""></a>
+                </div>
+                <div class="box-categorias">
+                    <a href="#"><img src="{% static 'img/banner-idiomas.jpg' %}" alt=""></a>
+                   <a href="#"><img src="{% static 'img/banner-design.jpg' %}" alt=""></a>
+                </div>            
+            </div>
+        </main>
+        
+        <section class="como-funciona">
+            <h2>Como funciona?</h2>
+            <div class="container">
+                <p>É facil de usar a F5Study! Aqui você aprende com pessoas que realmente quer compartilhar seus conhecimentos</p>
+                
+                <!-- <div class="banner-como-funciona"></div> -->
+                <div class="box-principal">
+                    <div class="box-como-funciona">
+                        <div>
+                            <img src="{% static 'img/icon-usuario.png' %}" alt="">
+                        </div>
+                        <h3>Cadastra-se no Site</h3>
+                        <p>Cadastre-se na nossa plataforma para ter acesso a todo material que for disponibilizado.</p>
+                    </div>
+                    <div class="box-como-funciona">
+                        <div>
+                            <img src="{% static 'img/icon-lupa.png' %}" alt="">
+                        </div>
+                        <h3>Procure Pessoas</h3>
+                        <p>Aqui, você pode procurar pessoas de diferentes áreas para troca de conhecimentos.</p>
+                    </div>
+                    <div class="box-como-funciona">
+                        <div>
+                            <img src="{% static 'img/icon-atencao.png' %}" alt="">
+                        </div>
+                        <h3>Verifique a forma e o local de estudo</h3>
+                        <p>Marque o encontro, de preferência em locais públicos e movimentados para a sua maior segurança.</p>
+                    </div>
+                    <div class="box-como-funciona">
+                        <div>
+                            <img src="{% static 'img/icon-pensando.png' %}" alt="">
+                        </div>
+                        <h3>Aprenda e compartilhe conhecimentos</h3>
+                        <p>Expande seus conhecimentos e compartilhe suas ideias com diversas pessoas que estão esperando você!.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="depoimentos">
+            <div class="container">
+                <h2>Testado e aprovado!</h2>
+                <p><i>"Eu usei a plataforma da F5Study e foi uma das melhores coisas que já fiz na minha vida, o site é sensacional e a proposta deles também. Pude me encontrar com um ótimo instrutor sobre Python que me ajudou muito e agora quero aprender cada vez mais sobre programação e suas linguagens. Uma experiência sensacional."</i></p>
+                <p>- Artur Valadares</p>
+            </div>
+        </section>
+    
+        <section class="newslatter">
+            <div class="container">
+                <h2>Receba as novidades!</h2>
+                <form>
+                    <input type="text" placeholder="Coloque seu email:">
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div> 
+        </section>
+
+
+{% endblock %}

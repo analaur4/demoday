@@ -1,0 +1,237 @@
+#topo-header{
+    display: block;
+     margin-bottom: 80px;
+ }
+ .nav-header .user-photo span {
+    background: url(img/card-foto4.jpg)no-repeat;
+    background-size: cover;
+ }
+ h2.title-procurar{
+     color: #563d7c;
+     font-size: 25px;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 3rem 0 2rem;
+ }
+ form.procurar{
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 3rem 10%;
+ }
+ form.procurar > span{
+     font-size: 13px;
+ }
+ form.procurar label{
+     font-weight: 700;
+     text-align: left;
+     padding: 10px 0;
+     width: 100%;
+ }
+ form.procurar div{
+     height: 40px;
+     display: flex;
+     width: 100%;
+ }
+ form.procurar div > select{
+     height: 100%;
+     width: 70%;
+ }
+ form.procurar div > a{
+     align-items: center;
+     background: #e62b4a;
+     color: #fff;
+     cursor: pointer;
+     display: flex;
+     height: 100%;
+     justify-content: center;
+     text-decoration: none;
+     width: 30%;
+ }
+ 
+ .painel-match input{
+     display: block;
+     margin-top: 20px;
+     width: 120px;
+ }
+ /* painel-match */
+ .painel-match{
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     padding: 2rem 10%;
+     width: 100%;
+ }
+ .painel-match .box-cards-match{
+     height: 360px;
+     margin-bottom: 3rem;
+     position: relative;
+     width: 250px;
+ }
+ .painel-match .thecard{
+     height: 100%;
+     transform-style: preserve-3d;
+     transition: all .5s ease;
+     position: absolute;
+     width: 100%;
+ }
+ .painel-match .thecard:hover{
+     transform: rotateY(180deg);
+ }
+ 
+ /* CADS - thefron */
+ .painel-match .thefront{
+     align-items: center;
+     align-content: center;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .card{
+     box-shadow: .5rem .5rem 3rem rgba(0,0,0,.2);
+     background-color: #ebeef8;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0;
+     width: 14rem;
+ }
+ 
+ .card .card-img{
+     width: 100%;
+     height: 10rem;
+     object-fit: cover;
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%)
+ }
+ 
+ .profile-img{
+     border: 1rem solid #ebeef8;
+     border-radius: 50%;
+     height: 10rem;
+     object-fit: cover;
+     margin-top: -4rem;
+     width: 10rem;
+     z-index: 4;
+ }
+ .card h1{
+     font-size: 1.5rem;
+     color: #333;
+ }
+ @keyframes fadeIn{
+     from{
+         opacity: 0;
+     }
+     to{
+         opacity: 1;
+     }
+ }
+ .card:nth-child(1){
+     animation: fadeIn 2.5s 2.5s backwards;
+ }
+ .box-cards-match:last-child .card{
+     animation: fadeIn 5.5s 5.5s backwards;
+ }
+ .job-title{
+     color: #777;
+     font-size: 1.2rem;
+     font-weight: 300;
+     padding-bottom: 24px;
+ }
+ 
+ .painel-match .thefront{
+     background: #fff;
+     backface-visibility: hidden;
+     border-radius: 5px;
+     box-shadow: 1px 2px 5px #000;
+     color: #333;
+     height: 100%;
+     position: absolute;
+     width: 100%;
+ }
+ .painel-match .theback{
+     background: #232323;
+     border-radius: 5px;
+     color: #565454;    
+     height: 100%;
+     backface-visibility: hidden;
+     padding: 10px;
+     position: absolute;
+     transform: rotateY(180deg);
+     width: 100%;
+     z-index: 5;
+ }
+ .painel-match .theback h2,.painel-match .theback h3{
+     color: #918f8f;
+     font-size: 15px;
+     letter-spacing: .2px;
+     margin-top: 10px;
+     text-align: right;
+ }
+ .painel-match .theback ul li{
+     color: #fff;
+     font-size: 15px;;
+     list-style:  none;
+     padding: 0;
+ }
+ .painel-match .theback p{
+     color: #fff;
+     font-size: 12px;
+     font-weight: 100;
+     padding: 10px 0;
+ }
+ .painel-match .avaliacao{
+     display: block;
+     width: 80px;
+ }
+ #btn-match2{
+     background: #0bc136;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+     font-size: 18px;
+     padding: 10px 20px;
+ }
+ 
+ @media screen and (min-width: 992px){
+     .painel-match > div{
+         align-items: center;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         width: 100%;
+     }
+     .painel-match .box-cards-match{
+         height: 440px;
+         margin-bottom: 3rem;
+         position: relative;
+         width: 320px;
+     }
+     form.procurar div{
+         background: red;
+         height: 40px;
+         display: flex;
+         width: 50%;
+     }
+     form.procurar > span{
+         font-size: 15px;
+         width: 50%;
+     }
+     form.procurar label{
+         font-weight: 700;
+         text-align: left;
+         padding: 10px 0;
+         width: 50%;
+     }
+     .card{
+         margin: 2rem 0;
+         width: 18rem;
+     }
+     .card h1{
+         margin: 1rem 0;
+     }
+ }
+ 
+ 

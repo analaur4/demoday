@@ -16,8 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pagina_cadastro.views import criar_cadastro_view
+from pagina_sobre.views import chamar_sobre
+from pagina_home.views import chamar_home, chamar_notificacoes
+from pagina_categorias.views import chamar_categorias
+from pagina_match.views import chamar_confirmar_match, chamar_procurar, chamar_procurar_dw
+from pagina_login.views import chamar_login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastro/', criar_cadastro_view),
+    path('cadastro/', criar_cadastro_view, name='cadastro'),
+    path('sobre/', chamar_sobre, name='sobre'),
+    path('home/', chamar_home, name='home'),
+    path('categorias/', chamar_categorias, name='categorias'),
+    path('match/', chamar_confirmar_match, name='match'),
+    path('procurar/', chamar_procurar, name='procurar'),
+    path('procurar-dw/', chamar_procurar_dw, name='procurar-dw'),
+    path('login/', chamar_login, name='login'),
+    path('notificacoes/', chamar_notificacoes, name='notificacoes'),
 ]

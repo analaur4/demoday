@@ -1,0 +1,65 @@
+{% extends 'layout-logado2.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+    <div class="banner-notificacaoes">
+        <h1>Notificações</h1>
+    </div>
+
+    <main class="notificacaoes">
+        <h2>Notificações</h2>
+        <a href="{% url 'match' %}">
+            <div class="box-notificacoes">
+                <div>
+                    <img src="{% static 'img/icon-perfil.jpg' %}" alt="" width="40px;">
+                </div>
+                
+                <div>
+                    <p class="texto-notificacoes"><span class="nome-notificacoes">Ana Laura</span> enviou uma socilitação a você.</p>
+                    <span>10 minutos atrás</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+                <div class="box-notificacoes">
+                    <div>
+                        <img src="{% static 'img/card-foto3.jpg' %}" alt="" width="40px;">
+                    </div>
+                    
+                    <div>
+                        <p class="texto-notificacoes"><span class="nome-notificacoes">Maria Lins</span> visitou seu perfil.</p>
+                        <span>40 minutos atrás</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                    <div class="box-notificacoes">
+                        <div>
+                            <img src="{% static 'img/card-foto1.jpg' %}" alt="" width="40px;">
+                        </div>
+                        
+                        <div>
+                            <p class="texto-notificacoes"><span class="nome-notificacoes">Afonso Santos</span> enviou uma socilitação a você.</p>
+                            <span>1 semanas atrás</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                        <div class="box-notificacoes">
+                            <div>
+                                <img src="{% static 'img/card-foto5.jpg' %}" alt="" width="40px;">
+                            </div>
+                            
+                            <div>
+                                <p class="texto-notificacoes"><span class="nome-notificacoes">Josh Victor</span> enviou uma socilitação a você.</p>
+                                <span>3 semanas atrás</span>
+                            </div>
+                        </div>
+                    </a>
+
+    </main>
+    {% endblock %}

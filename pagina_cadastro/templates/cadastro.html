@@ -27,10 +27,115 @@
                 <!-- {{ cadastro.as_p }} -->
 
                 <!-- chamar cada campo e montar o formulário manualmente -->
+                 <label> Nome: </label>
+                {{ cadastro.nome }}
 
-                {{ cadastro.javaScript }}
+                <label> E-mail: </label>
+                {{ cadastro.email }}
 
-                <button class="botao-sign">Cadastre-se</button>
+                <label> Senha: </label>
+                {{ cadastro.senha }}
+
+                <label> Estado: </label>
+                {{ cadastro.estado }}
+
+                <label> Cidade: </label>
+                {{ cadastro.cidade }}
+
+                <section>
+                    <div class="interesses">
+                    <legend> Desenvolvimento WEB </legend>
+                        <label> JavaScript </label>
+                        {{ cadastro.javaScript }}
+
+                        <label> Angular </label>
+                        {{ cadastro.angular }}
+
+                        <label> React </label>
+                        {{ cadastro.react}}
+
+                        <label> CSS </label>
+                        {{ cadastro.css }}
+
+                        <label> PHP </label>
+                        {{ cadastro.php}}
+
+                        <label> NodeJS </label>
+                        {{ cadastro.nodeJS}}
+
+                        <label> HTML </label>
+                        {{ cadastro.html }}
+
+                        <label> Django </label>
+                        {{ cadastro.django }}
+
+                        <label> Python </label>
+                        {{ cadastro.python }}
+
+                        <label> Bootstrap </label>
+                        {{ cadastro.bootstrap }}
+                    </div>    
+                    <div class="interesses">
+                        <legend> Linguagem de Programação </legend>
+                        <label> Java </label>
+                        {{ cadastro.java }}
+
+                        <label> C </label>
+                        {{ cadastro.c }}
+
+                        <label> Algoritmos </label>
+                        {{ cadastro.algoritmos }}
+                    </div>
+                    <div class="interesses">
+                        <legend> Negócios </legend>
+                        <label> Finanças </label>
+                        {{ cadastro.financas }}
+
+                        <label> Empreendedorismo </label>
+                        {{ cadastro.empreendedorismo}}
+
+                        <label> Comunicações </label>
+                        {{ cadastro.comunicacoes }}
+
+                        <label> Administração </label>
+                        {{ cadastro.administracao }}
+                    </div>
+                    
+                    <div class="interesses">
+                        <legend> TI e Software </legend>
+                        <label> Certificação TI </label>
+                        {{ cadastro.certificacaoTI }}
+
+                        <label> Rede de Segurança </label>
+                        {{ cadastro.redeSeguranca }}
+
+                        <label> Hardware </label>
+                        {{ cadastro.hardware }}
+
+                        <label> Sistemas Operacionais </label>
+                        {{ cadastro.sistemasOperacionais }}
+                    </div>
+
+                    <div class="interesses">
+                        <legend> Produtividade no Escritório </legend>
+                        <label> Microsoft </label>
+                        {{ cadastro.microsoft }}
+
+                        <label> Apple </label>
+                        {{ cadastro.apple }}
+
+                        <label> Google </label>
+                        {{ cadastro.google }}
+
+                        <label> SAP </label>
+                        {{ cadastro.sap }}
+
+                        <label> Oracle </label>
+                        {{ cadastro.oracle }}
+                    </div>
+                </section>
+
+                <button class="botao-sign"><a href="{% url 'home' %}"></a> Cadastre-se</button>
 
                 <p>Ou</p>
 

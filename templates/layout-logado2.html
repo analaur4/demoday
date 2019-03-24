@@ -1,0 +1,192 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F5Study - Bem-vindo</title>
+    <link rel="stylesheet" href="{% static 'css/layout-logado2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/categorias.css' %}">
+    <link rel="stylesheet" href="{% static 'css/confirmar-match' %}">
+    <link rel="stylesheet" href="{% static 'css/procurar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/procurar=dw.css' %}">
+    <link rel="stylesheet" href="{% static 'css/notificacoes.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    
+    <script defer src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script defer src="{% static 'js/script.js' %}"></script>
+    <script defer src="{% static 'js/pace.min.js' %}"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html">F5Study</a></h1>
+            <span id="button-menu" class="fa fa-bars"></span>
+        </div> 
+        <nav class="nav-header">
+            <ul class="menu">
+                <span class="menu-left">
+                    <li class="title-menu"></li>
+                    <!-- <li><a href="#"><span class="fa fa-home icon-menu"></span>Inicio</a></li> -->
+                    <li class="logo-header"><a href="{% url 'home' %}"><span class="fa fa-home icon-menu logo-header"></span>Home</a></li>
+                    <li><a href="{% url 'sobre' %}"><span class="fa fa-users icon-menu"></span>Sobre</a></li>
+
+                    <li class="item-submenu" menu="1">
+                        <a href="#"><span class="fa fa-list icon-menu"></span>Categorias</a>
+                        <!-- sub-menu -->
+                        <ul class="sub-menu">
+                                <li class="title-menu"><span class="fa fa-list icon-menu"></span>Categorias</li>
+                                <li class="go-back">Voltar</li>
+                                
+                                <li class="item-submenu2" menu="1"> 
+                                    <a href="#" class="title">Desenvolvimento</a>
+                                    <!-- sub-menu2 -->
+                                    <ul class="sub-menu2">
+                                        <li class="title-menu"><span class="icon-menu"></span>Desenvolvimento</li>
+                                        <li class="go-back">Voltar</li>
+                                        <li><a href="{% url 'categorias' %}">Desenvolvimento web</a></li>
+                                        <li><a href="#">Aplicativos móveis</a></li>
+                                        <li><a href="#">Liguagens de programação</a></li>
+                                        <li><a href="#">Banco de dados</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="item-submenu2" menu="2">
+                                    <a href="#" class="title">Design</a>
+                                    <!-- sub-menu2 -->
+                                    <ul class="sub-menu2">
+                                        <li class="title-menu"><span class="icon-menu"></span>Design</li>
+                                        <li class="go-back">Voltar</li>
+                                        <li><a href="#">Desenvolvimento web</a></li>
+                                        <li><a href="#">Aplicativos móveis</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class=""><a href="#">Idiomas</a></li>
+                                <li class=""><a href="#">Fotografia</a></li>
+                                <li class=""><a href="#">Desenvolvimento pessoal</a></li>
+                                <li class=""><a href="#">Saúde</a></li>
+                                <li class=""><a href="#">Marketing</a></li>
+                                <li class=""><a href="#">Música</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#footer"><span class="fa fa-envelope icon-menu"></span>Contato</a></li>
+                    </span>
+            
+
+                    <!-- colocar em outro arquivo, excluir a parte de login e cadastro e mudar a ordem de exibição para desk e mobilie    -->
+                <span class="menu-right">
+                    <li class="user-photo">
+                        <span>FOTO</span>
+                    </li>
+                    <span class="msg-user">Bem-vindo(a) <span class="name-user-color">Ana Laura</span></span>
+                    <span class="submenu-user">
+                        <li><a href="#" class="menu-left">Perfil</a></li>
+                        <li><a href="#" class="menu-left">Notificações</a></li>
+                        <li><a href="{% url 'procurar' %}" class="menu-left">Procurar...</a></li>
+                        <li><a href="#" class="menu-left">Configurações</a></li>
+                        <li><a href="#" class="menu-left">Sair</a></li>
+
+
+                    </span>
+                </span>
+            </ul>
+        </nav>
+
+    </header>
+    <span id="topo-header"></span>
+
+    {% block content %}
+
+    <!-- conteúdo das páginas -->
+
+    {% endblock %}
+
+    <footer id="footer">
+        <div>
+            <!-- box1 -->
+            <div class="footer-about">
+                <h3>Sobre o Projeto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias.</p>
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--  -->
+            <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="index.html">Contato</a></li>
+                    </ul>
+            </div>
+
+            <!-- box2  -->
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <ul>
+                    <li>
+                            <i class="far fa-envelope"></i>
+                            <span>f5Study@contato.com.br</span>
+                    </li>
+                    <li>
+                            <i class="fas fa-phone"></i> 
+                            <span>+123 456 7890</span>
+                    </li>
+                </ul>
+            </div>
+    </div>
+     <!-- box3  -->
+        <div class="footer-copyright">
+            <div>
+                <p>&copy; 2019 Quase todos os direitos reservados. Eduação e apredizagem é na F5Study.com</p>
+            </div>
+            <div>
+                <p>
+                    <a href="#topo-header"> Voltar para o topo </a><i class="fas fa-long-arrow-alt-up"></i>
+                </p>
+            </div>
+        </div>
+</footer>
+
+
+</body>
+</html>

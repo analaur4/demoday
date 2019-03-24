@@ -144,6 +144,12 @@ hr{
     }
 }
 
+.interesses{
+    border: 1px grey solid;
+    margin: 5px;
+    width: 50%;
+}
+
 @media(min-width: 624px){
     .form-container{
         padding: 0 160px;

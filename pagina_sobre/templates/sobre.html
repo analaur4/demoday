@@ -1,100 +1,135 @@
-{% extends layout.html %}
-{% load static files %}
-{% block content%}
+{% extends 'layout.html' %}
+{% load staticfiles %}
+{% block content %}
 
-<link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+<div class="banner-desenvolvimento-web">
+    <h1>Sobre</h1>
+</div>
 
-<div class="sobre">
-    <div class="banner-sobre">
-        <h1>Sobre nós</h1>
-    </div>
-    <main>
-        <div class="objetivo">
-            <h2>A F5Study</h2>
-            <p>
+<section>
+    <div class="sobre-empresa">
+        <h2>Sobre empresa</h2>
+        <p>
                 Nós da F5Study pensamos: onde poderíamos aprender mais com pessoas diferentes? E está ai. A F5Study é a
                 plataforma digital em que você promove meetups com pessoas de diferentes áreas que queiram aprender um
                 pouco mais sobre o que você têm a ensinar. É uma troca de conhecimentos, sacou?
+        </p>
+        <p>
+            Buscamos a transparência de tudo o que é proposto nessa plataforma. Nosso diferencial é: onde encontrar
+            alguém que saiba sobre algo que eu não sei e eu possa ensinar algo em troca que ela também queira?
+            Tcharan! É ai que a F5Study entra em ação, nossa plataforma virtual está aqui para te auxiliar em dar e
+            receber esse conhecimento de um modo não tão tradicional.
+        </p>
+        
+        <h2>Nossa História</h2>
+        <p>
+            Éramos 5 estudantes de um projeto do Facebook que gostavam e ainda gostamos muito de aprender. Pensamos
+            em algum problema que poderíamos resolver e que tivesse "a nossa carinha". Foi aí que surgiu a F5Study.
+            Atualmente faltam incentivos para outros métodos de adquirir conhecimento, então criamos o nosso.
+            Gostou? Então é só dar match!
+        </p>
+
+        
+    </div>
+
+    <div class="card-wrapper">    
+        <div class="card">
+            <img src="{% static 'img/card-bg.png' %}" alt="fundo do card" class="card-img">
+            <img src="{% static 'img/ana-clara.jpg' %}" alt="imagem perfil" class="profile-img">
+            <h1>Ana Clara</h1>
+            <p class="job-title">Desenvolvedora Front-end</p>
+            <p class="about">Precisou algo para criação de conteúdo texto legal para colocar no seu site e contar um pouco mais sobre você e suas ideias?
+                Chama e é só dar o match. Iniciante em desenvolvimento web, atua na área do marketing e editoração
+                da F5Study.
             </p>
-            <p>
-                Buscamos a transparência de tudo o que é proposto nessa plataforma. Nosso diferencial é: onde encontrar
-                alguém que saiba sobre algo que eu não sei e eu possa ensinar algo em troca que ela também queira?
-                Tcharan! É ai que a F5Study entra em ação, nossa plataforma virtual está aqui para te auxiliar em dar e
-                receber esse conhecimento de um modo não tão tradicional.
-            </p>
-        </div>
-        <div class="historia">
-            <h2>Nossa História</h2>
-            <p>
-                Éramos 5 estudantes de um projeto do Facebook que gostavam e ainda gostamos muito de aprender. Pensamos
-                em algum problema que poderíamos resolver e que tivesse "a nossa carinha". Foi aí que surgiu a F5Study.
-                Atualmente faltam incentivos para outros métodos de adquirir conhecimento, então criamos o nosso.
-                Gostou? Então é só dar match!
-            </p>
+            <a href="#" class="btn">+ Informações</a>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
         </div>
 
-    </main>
-    <section class="cards">
-        <!-- colocar uma flex-box para organizar melhor ou duas div -->
-        <article class="cards-content">
-            <div class="avatar">
-                <img class=face src="{% static 'img/ana-clara.jpg' %}" alt="">
-            </div>
-            <div class="avatar-content">
-                <h2 class="avatar-title">Ana Clara</h2>
-                <p class="avatar-text">
-                    Precisou de um texto legal para colocar no seu site e contar um pouco mais sobre você e suas ideias?
-                    Chama e é só dar o match. Iniciante em desenvolvimento web, atua na área do marketing e editoração
-                    da F5Study.
 
-                    <p>
-            </div>
-            <div class="avatar">
-                <img class=face src="{% static 'img/ana-laura.jpg' %}" alt="">
-            </div>
-            <div class="avatar-content">
-                <h2 class="avatar-title">Ana Laura</h2>
-                <p class="avatar-text">
-                    Deu bug no back-end? É só chamar ela. Fera no back-end e adora passar uma raivinha com erros. Se
-                    precisar ainda de um front-end ela manja. Desenvolvedora em HTML, CSS, JavaScript, C++, C#, MySQL e
-                    SQL Server. Estudante de Ciência da Computação.
-                    <p>
-            </div>
-            <div class="avatar">
-                <img class=face src="{% static 'img/gaby.jpg' %}" alt="">
-            </div>
-            <div class="avatar-content">
-                <h2 class="avatar-title">Gabrielly</h2>
-                <p class="avatar-text">
-                    Está precisando de um site mas não faz ideia de quem chamar? A escolha mais prudente a se fazer é
-                    dar uma olhada nos projetos dessa mulher. Não perca essa chance! Desenvolvedora em HTML, CSS,
-                    JavaScript. Estudante de Sistemas de Informação.
-                    <p>
-            </div>
-            <div class="avatar">
-                <img class=face src="{% static 'img/igor.jpg' %}" alt="">
-            </div>
-            <div class="avatar-content">
-                <h2 class="avatar-title">Igor</h2>
-                <p class="avatar-text">
-                    Opa, opa, opa! Precisou de um front daora mas ainda não chamou ele? Pense bem nisso hein? O cara é
+
+        <div class="card">
+            <img src="{% static 'img/card-bg.png' %}" alt="fundo do card" class="card-img">
+            <img src="{% static 'img/ana-laura.jpg' %}" alt="imagem perfil" class="profile-img">
+            <h1>Ana Laura</h1>
+            <p class="job-title"> Desenvolvedora Fullstack
+            </p>
+            <p class="about">
+                Deu bug no back-end? É só chamar ela. Fera no back-end e adora passar uma raivinha com erros. Se
+                precisar ainda de um front-end ela manja. Desenvolvedora em HTML, CSS, JavaScript, C++, C#, MySQL e
+                SQL Server. Estudante de Ciência da Computação.
+            </p>
+            <a href="#" class="btn">+ Informações
+
+            </a>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+                <img src="{% static 'img/card-bg.png' %}" alt="fundo do card" class="card-img">
+                <img src="{% static 'img/igor.jpg' %}" alt="imagem perfil" class="profile-img">
+                <h1>Igor Santos</h1>
+                <p class="job-title">Desenvolvedor Front-end</p>
+                <p class="about">
+                    Precisou de um front daora mas ainda não chamou ele? Pense bem nisso hein? O cara é
                     sensacional, já sabe o que quer no seu site, mas não sabe fazer. Dá um match que é sucesso.
                     Desenvolvedor em HTML, CSS, JavaScript e Bootstrap. Estudante de Sistemas para Internet.
-                    <p>
-            </div>
-            <div class="avatar">
-                <img class=face src="{% static 'img/joao-victor.jpeg' %}" alt="">
-            </div>
-            <div class="avatar-content">
-                <h2 class="avatar-title">João Victor</h2>
-                <p class="avatar-text">
+                </p>
+                <a href="#" class="btn">+ Informações
+
+                </a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+        </div>
+
+        
+        
+        <div class="card">
+            <img src="{% static 'img/card-bg.png' %}" alt="fundo do card" class="card-img">
+            <img src="{% static 'img/gaby.jpg' %}" alt="imagem perfil" class="profile-img">
+            <h1>Gabryelle Santos</h1>
+            <p class="job-title">Desenvolvedora Fullstack</p>
+            <p class="about">
+                Está precisando de um site mas não faz ideia de quem chamar? A escolha mais prudente a se fazer é
+                dar uma olhada nos projetos dessa mulher. Não perca essa chance! Desenvolvedora em HTML, CSS,
+                JavaScript. Estudante de Sistemas de Informação.
+            </p>
+            <a href="#" class="btn">+ Informações</a>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <img src="{% static 'img/card-bg.png' %}" alt="fundo do card" class="card-img">
+            <img src="{% static 'img/joao-victor.jpeg' %}" alt="imagem perfil" class="profile-img">
+            <h1>João Máximo</h1>
+            <p class="job-title">Desenvolvedor Fullstack</p>
+            <p class="about">
                     Não está sabendo o que está acontecendo com o seu site? Só consegue ver que nada funciona? Esse cara
                     trata os erros como você gostaria que tratassem os seus problemas, rapidinho eles somem!
                     Desenvolvedor em HTML, CSS, JavaScript, C++, C#, MySQL e SQL Server.
-                    <p>
-            </div>
-        </article>
-
-    </section>
-</div>
+            </p>
+            <a href="#" class="btn">+ Informações</a>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
 {% endblock %}
